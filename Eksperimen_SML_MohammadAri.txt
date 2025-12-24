@@ -1,0 +1,17 @@
+GitHub Repository: https://github.com/13222093/Eksperimen_SML_MohammadAri
+
+Repository berisi:
+- Eksperimen notebook lengkap dengan EDA dan preprocessing
+- Script otomasi preprocessing (automate_MohammadAri.py)
+- Dataset raw (transaction_dataset.csv) dan hasil preprocessing
+- README.md dengan instruksi lengkap
+
+Catatan:
+- Repository harus PUBLIC untuk review
+- Pastikan semua cell pada notebook berjalan tanpa error
+- Jika menerapkan Advanced, sertakan GitHub Actions workflow
+
+INSTRUKSI:
+1. Push folder 'Eksperimen_SML_MohammadAri' dari 'GitHub_Repos_ToUpload' ke GitHub
+2. Ganti [YOUR_USERNAME] di atas dengan username GitHub Anda
+3. Pastikan repository visibility = Public

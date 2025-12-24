@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ari%20Azis/Downloads/SMSML_MohammadAri/Membangun_model/mlruns/592440156316552135/1b026d0866254372b6ad243c8a55f2ad/artifacts
+end_time: 1766570210593
+entry_point_name: ''
+experiment_id: '592440156316552135'
+lifecycle_stage: active
+run_id: 1b026d0866254372b6ad243c8a55f2ad
+run_name: RandomForest_Tuned
+run_uuid: 1b026d0866254372b6ad243c8a55f2ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766570162347
+status: 3
+tags: []
+user_id: Ari Azis

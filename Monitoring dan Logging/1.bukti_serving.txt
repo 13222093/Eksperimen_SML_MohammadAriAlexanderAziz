@@ -1,0 +1,47 @@
+# Bukti Model Serving
+
+## Instruksi untuk Screenshot
+
+Ambil screenshot yang menunjukkan:
+
+1. **Terminal/Command Prompt** menjalankan salah satu dari:
+   - `mlflow models serve -m runs:/<RUN_ID>/xgboost_model -p 5000`
+   - `python 7.inference.py`
+
+2. **Browser** menampilkan:
+   - Response dari health check endpoint (http://localhost:5001/health)
+   - Atau response dari root endpoint (http://localhost:5001/)
+
+3. **Bukti model berjalan** dengan salah satu cara:
+   - Gunakan curl: `curl http://localhost:5001/health`
+   - Gunakan Postman untuk test endpoint
+   - Screenshot browser menampilkan JSON response
+
+## Contoh Command untuk Serving
+
+### Opsi 1: MLflow Serve (Recommended untuk Basic)
+```bash
+# Dapatkan RUN_ID dari MLflow UI
+mlflow models serve -m runs:/<RUN_ID>/xgboost_model -p 5000 --no-conda
+```
+
+### Opsi 2: Custom Flask API (Recommended untuk Skilled)
+```bash
+cd "Monitoring dan Logging"
+python 7.inference.py
+```
+
+## Format Screenshot
+
+- Nama file: `1.bukti_serving.jpg` atau `1.bukti_serving.png`
+- Screenshot harus menunjukkan:
+  - Timestamp/tanggal
+  - Username/nama Anda (di window title atau prompt)
+  - Service berjalan dengan success
+  - Response dari endpoint
+
+## Tips
+
+- Pastikan port tidak sedang digunakan aplikasi lain
+- Untuk MLflow serve, pastikan model sudah di-log dengan benar
+- Untuk Flask API, pastikan file model ada di folder yang sama

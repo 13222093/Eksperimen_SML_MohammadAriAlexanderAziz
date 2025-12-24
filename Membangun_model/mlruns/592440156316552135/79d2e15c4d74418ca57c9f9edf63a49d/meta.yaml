@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Ari%20Azis/Downloads/SMSML_MohammadAri/Membangun_model/mlruns/592440156316552135/79d2e15c4d74418ca57c9f9edf63a49d/artifacts
+end_time: 1766570449963
+entry_point_name: ''
+experiment_id: '592440156316552135'
+lifecycle_stage: active
+run_id: 79d2e15c4d74418ca57c9f9edf63a49d
+run_name: XGBoost_Tuned
+run_uuid: 79d2e15c4d74418ca57c9f9edf63a49d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766570433389
+status: 3
+tags: []
+user_id: Ari Azis

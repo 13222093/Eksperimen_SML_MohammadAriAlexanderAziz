@@ -1,0 +1,19 @@
+GitHub Repository: https://github.com/13222093/Workflow-CI
+
+Repository berisi:
+- MLflow Project configuration (MLProject, conda.yaml)
+- GitHub Actions CI/CD workflow (.github/workflows/train-model.yml)
+- Training scripts (modelling.py) dan dependencies
+- Dataset preprocessing untuk training
+- README.md dengan instruksi lengkap
+
+Catatan:
+- Repository harus PUBLIC untuk review
+- Pastikan GitHub Actions workflow berhasil run minimal 1x
+- Artifacts disimpan via GitHub Actions (Skilled level requirement)
+
+INSTRUKSI:
+1. Push folder 'Workflow-CI' dari 'GitHub_Repos_ToUpload' ke GitHub
+2. Ganti [YOUR_USERNAME] di atas dengan username GitHub Anda
+3. Pastikan repository visibility = Public
+4. Trigger workflow dan pastikan berhasil (cek Actions tab)

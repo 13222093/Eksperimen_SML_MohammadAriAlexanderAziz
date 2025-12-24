@@ -1,0 +1,38 @@
+# Prometheus Configuration for Ethereum Fraud Detection Model
+# Author: Mohammad Ari Alexander Aziz
+
+global:
+  scrape_interval: 15s  # Scrape metrics every 15 seconds
+  evaluation_interval: 15s  # Evaluate rules every 15 seconds
+  external_labels:
+    monitor: 'ethereum-fraud-detection'
+    environment: 'production'
+
+# Scrape configurations
+scrape_configs:
+  # MLflow Model Server Metrics
+  - job_name: 'mlflow-model-server'
+    static_configs:
+      - targets: ['localhost:5000']
+        labels:
+          service: 'mlflow'
+          model: 'ethereum-fraud-detection'
+
+  # Custom Application Metrics
+  - job_name: 'fraud-detection-app'
+    static_configs:
+      - targets: ['localhost:5001']
+        labels:
+          service: 'inference-api'
+          model: 'xgboost-fraud'
+
+  # Prometheus Self-Monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+# Alerting configuration (connect to Alertmanager if needed)
+# alerting:
+#   alertmanagers:
+#     - static_configs:
+#         - targets: ['localhost:9093']
