@@ -387,7 +387,7 @@ def main():
     preprocessor = EthereumFraudPreprocessor()
 
     # Load data
-    input_file = '../transaction_dataset.csv'
+    input_file = 'transaction_dataset.csv'
     df = preprocessor.load_data(input_file)
 
     # Run preprocessing pipeline
